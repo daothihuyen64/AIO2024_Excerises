@@ -9,9 +9,6 @@ def step(message, i , j, way,source,target):
                     else:
                         message[i][j] = message[i-1][j-1] + f'Giu  nguyen ky tu {source[i]} \n'
                 
-
-#def levenshtein(source, target):
-
 source = input("Nhap chuoi bat dau : ")
 target = input("Nhap chuoi ket thuc : ")
 #levenshtein(source, target)
