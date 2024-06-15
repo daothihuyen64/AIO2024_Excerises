@@ -11,7 +11,6 @@ def step(message, i , j, way,source,target):
                 
 source = input("Nhap chuoi bat dau : ")
 target = input("Nhap chuoi ket thuc : ")
-#levenshtein(source, target)
 source = "#" + source
 target = "#" + target
 D = [[0 for _ in range(len(target))] for _ in range(len(source))]
