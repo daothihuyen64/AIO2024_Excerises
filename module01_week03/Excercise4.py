@@ -10,13 +10,22 @@ class Queue:
         return len(self.__queue) == self.__capacity
     
     def dequeue(self):
-        return self.__queue.pop(0)
+        if self.is_empty() == False:
+            return self.__queue.pop(0)
+        else:
+            return 'dequeue is empty'
     
     def enqueue(self, value):
-        self.__queue.append(value)
+        if self.is_full() == False:
+            self.__queue.append(value)
+        else:
+            print('queue is full')
 
     def front(self):
-        return self.__queue[0]
+        if self.is_empty() == False:
+            return self.__queue[0]
+        else:
+            print('queue is empty')
     
 queue1 = Queue ( capacity =5)
 queue1 . enqueue (1)
