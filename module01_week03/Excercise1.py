@@ -27,4 +27,3 @@ print(output1)
 softmax_stable = softmax_stable ()
 output2 = softmax_stable ( data )
 print(output2)
-

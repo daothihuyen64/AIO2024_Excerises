@@ -82,5 +82,3 @@ ward1 . sort_age ()
 ward1 . describe ()
 
 print ( f"Average year of birth ( teachers ): { ward1 . compute_average ()}")
-
-
